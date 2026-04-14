@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <h2>📚 Dashboard Sekolah</h2>
+    <div class="user">User: Admin</div>
+</div>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li onclick="showPage('home')">🏠 Dashboard</li>
+            <li onclick="showPage('guru')">👨‍🏫 Data Guru</li>
+            <li onclick="showPage('siswa')">🎓 Data Siswa</li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+
+        <!-- HOME -->
+        <div id="home" class="page">
+            <h1>Dashboard</h1>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Jumlah Guru</h3>
+                    <p>10</p>
+                </div>
+                <div class="card">
+                    <h3>Jumlah Siswa</h3>
+                    <p>200</p>
+                </div>
+                <div class="card">
+                    <h3>Kelas</h3>
+                    <p>12</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- GURU -->
+        <div id="guru" class="page" style="display:none;">
+            <h1>Data Guru</h1>
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <th>Mapel</th>
+                </tr>
+                <tr>
+                    <td>Budi</td>
+                    <td>Matematika</td>
+                </tr>
+                <tr>
+                    <td>Siti</td>
+                    <td>Bahasa Indonesia</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- SISWA -->
+        <div id="siswa" class="page" style="display:none;">
+            <h1>Data Siswa</h1>
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                </tr>
+                <tr>
+                    <td>Andi</td>
+                    <td>10A</td>
+                </tr>
+                <tr>
+                    <td>Rina</td>
+                    <td>11B</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
